@@ -80,7 +80,7 @@ nav a:hover{
     height:100vh;
     background:
         linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.85)),
-        url("/chevrolet-omega-4.1-7558634-71165092.webp");
+        url("chevrolet-omega-4.1-7558634-71165092.webp");
     background-size:cover;
     background-position:center;
     display:flex;
