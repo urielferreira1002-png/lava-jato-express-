@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lava Jato Express Rápido, Prático e Eficiente</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+    <div class="loader-content">
+        <img src="/lava jato express.png" alt="Lava Jato Express" class="logo-loader">
+        <div class="loading-bar">
+            <div class="loading-fill"></div>
+        </div>
+        <p>Carregando...</p>
+    </div>
+</div>
+
+<!-- HEADER -->
+<header>
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+
+    <a href="#inicio" class="logo">
+        <img src="/lava jato express.png" alt="Logo Lava Jato Express">
+        <span>Lava Jato Express</span>
+    </a>
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#agendamento">Agendar</a>
+        <a href="#contato">Contato</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+    <h1>Lava Jato Express</h1>
+    <p>Seu carro brilhando como novo. Qualidade, rapidez e cuidado profissional na porta da sua casa.</p>
+    <a href="#agendamento" class="btn">Agendar Agora</a>
+</section>
+
+<!-- SERVIÇOS -->
+<section class="servicos" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>Lavagem Simples</h3>
+            <p>Limpeza externa completa com água pressurizada, shampoo automotivo e secagem.</p>
+            <span class="preco">R$ 30</span>
+        </div>
+        <div class="card">
+            <h3>Lavagem Completa</h3>
+            <p>Limpeza interna e externa com aspiração, limpeza de painéis e vidros.</p>
+            <span class="preco">R$ 60</span>
+        </div>
+        <div class="card">
+            <h3>Higienização</h3>
+            <p>Higienização profunda do veículo com produtos bactericidas e neutralizadores de odor.</p>
+            <span class="preco">R$ 120</span>
+        </div>
+        <div class="card">
+            <h3>Polimento</h3>
+            <p>Brilho e proteção duradoura para a pintura. Remove riscos leves e oxidação.</p>
+            <span class="preco">R$ 250</span>
+        </div>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section class="galeria" id="galeria">
+    <h2>Antes e Depois</h2>
+    <div class="galeria-grid">
+        <div class="foto">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Lavagem Completa">
+            <h3>Lavagem Completa</h3>
+        </div>
+        <div class="foto">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" alt="Polimento Técnico">
+            <h3>Polimento Técnico</h3>
+        </div>
+        <div class="foto">
+            <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=800" alt="Higienização Interna">
+            <h3>Higienização Interna</h3>
+        </div>
+    </div>
+
+    <!-- Fotos enviadas pelo admin -->
+    <div id="galeriaPublica"></div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>
+        No Lava Jato Express, cuidamos do seu veículo com dedicação, tecnologia e produtos de qualidade profissional.
+        Nossa missão é proporcionar uma limpeza completa, proteção duradoura e um acabamento impecável, valorizando a
+        aparência e a conservação do seu automóvel. Com atendimento totalmente domiciliar, levamos toda a estrutura
+        necessária até você, oferecendo praticidade, conforto e resultados que superam expectativas.
+        Seu carro limpo, protegido e renovado sem sair de casa.
+    </p>
+</section>
+
+<!-- AVALIAÇÕES -->
+<section class="avaliacoes" id="avaliacoes">
+    <h2>O Que Nossos Clientes Dizem</h2>
+    <div class="avaliacoes-grid">
+        <div class="avaliacao">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>Meu carro ficou impecável. Atendimento excelente e rápido!</p>
+            <strong>— Carlos Henrique</strong>
+        </div>
+        <div class="avaliacao">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>Serviço rápido e com muito capricho. Recomendo demais!</p>
+            <strong>— Mariana Silva</strong>
+        </div>
+        <div class="avaliacao">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>Melhor lava jato que já utilizei. Vai até em casa, que comodidade!</p>
+            <strong>— João Pedro</strong>
+        </div>
+    </div>
+</section>
+
+<!-- AGENDAMENTO -->
+<section class="agendamento" id="agendamento">
+    <h2>Agende Seu Horário</h2>
+    <form id="formAgendamento" novalidate>
+        <input type="text" id="nome" placeholder="Seu Nome Completo" required>
+        <input type="tel" id="telefone" placeholder="WhatsApp (ex: 31912345678)" required>
+        <input type="text" id="veiculo" placeholder="Veículo (ex: Gol 1.6 2018)" required>
+        <input type="text" id="placa" placeholder="Placa do Veículo (ex: ABC-1234)" required maxlength="8">
+        <select id="servico" required>
+            <option value="">Escolha um Serviço</option>
+            <option value="Lavagem Simples">Lavagem Simples — R$ 30</option>
+            <option value="Lavagem Completa">Lavagem Completa — R$ 60</option>
+            <option value="Higienização">Higienização — R$ 120</option>
+            <option value="Polimento">Polimento — R$ 250</option>
+        </select>
+        <input type="date" id="data" required>
+        <select id="hora" required>
+            <option value="">Escolha um Horário</option>
+            <option>08:00</option>
+            <option>09:00</option>
+            <option>10:00</option>
+            <option>11:00</option>
+            <option>12:00</option>
+            <option>13:00</option>
+            <option>14:00</option>
+            <option>15:00</option>
+            <option>16:00</option>
+            <option>17:00</option>
+        </select>
+        <button type="submit">Confirmar Agendamento via WhatsApp</button>
+    </form>
+    <div id="msgSucesso">
+        ✅ Agendamento registrado! Você será redirecionado ao WhatsApp para confirmar.
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section class="contato" id="contato">
+    <h2>Contato</h2>
+    <p>📞 <a href="tel:+5531953025800">(31) 9530-2580</a></p>
+    <p>💬 <a href="https://wa.me/5531953025800" target="_blank">Chamar no WhatsApp</a></p>
+    <p>📍 Belo Horizonte — MG (Atendimento Domiciliar)</p>
+</section>
+
+<footer>
+    <p>© 2026 Lava Jato Express — Todos os direitos reservados</p>
+</footer>
+
+<!-- BOTÃO FLUTUANTE ADM -->
+<a href="login.html" class="btn-adm">🔐 Painel ADM</a>
+
+<script src="script.js"></script>
+</body>
+</html>
